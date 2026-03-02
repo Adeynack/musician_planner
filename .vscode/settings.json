@@ -1,0 +1,23 @@
+{
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.formatOnSave": true
+  },
+  "rubyLsp.formatter": "rubocop",
+  "rubyLsp.linters": [
+    "rubocop"
+  ],
+  "[html]": {
+    "editor.tabSize": 2
+  },
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
+    "editor.formatOnSave": true
+  },
+  "files.associations": {
+    "*.html.erb": "erb"
+  },
+  "github.copilot.enable": {
+    "*": false,
+  }
+}

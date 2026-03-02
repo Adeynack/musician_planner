@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "shopify.ruby-lsp",
+    "aliariff.vscode-erb-beautify",
+    "esbenp.prettier-vscode"
+  ]
+}
