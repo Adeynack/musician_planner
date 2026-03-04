@@ -1,5 +1,5 @@
 <%= render "components/toolbar" do %>
-  <%= toolbar_link_to "Edit this project", edit_project_path(@project) %>
   <%= toolbar_link_to "Back to projects", projects_path%>
+  <%= toolbar_link_to "Edit this project", edit_project_path(@project) %>
   <%= toolbar_delete_link_to "Destroy this project", @project, data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
 <% end %>
