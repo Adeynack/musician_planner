@@ -14,7 +14,7 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_04_143250) do
   create_table "ensembles", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
+    t.string "name", null: false
     t.string "website"
     t.string "email"
   end
@@ -34,6 +34,7 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_04_143250) do
     t.datetime "updated_at", null: false
     t.integer "player_id", null: false
     t.integer "project_id", null: false
+    t.text "note"
     t.index ["player_id"], name: "index_player_projects_on_player_id"
     t.index ["project_id"], name: "index_player_projects_on_project_id"
   end
@@ -41,7 +42,7 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_04_143250) do
   create_table "players", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
+    t.string "name", null: false
     t.string "main_instrument"
     t.string "email"
   end
@@ -49,9 +50,9 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_04_143250) do
   create_table "projects", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
+    t.string "name", null: false
     t.integer "ensemble_id", null: false
-    t.date "date"
+    t.date "date", null: false
     t.string "place"
     t.index ["ensemble_id"], name: "index_projects_on_ensemble_id"
   end

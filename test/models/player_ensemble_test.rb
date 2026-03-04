@@ -4,11 +4,11 @@
 # Database name: primary
 #
 #  id          :integer          not null, primary key
-#  note        :text
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
-#  ensemble_id :integer          not null
 #  player_id   :integer          not null
+#  ensemble_id :integer          not null
+#  note        :text
 #
 # Indexes
 #

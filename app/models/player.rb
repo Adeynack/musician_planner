@@ -4,18 +4,25 @@
 # Database name: primary
 #
 #  id              :integer          not null, primary key
-#  email           :string
-#  main_instrument :string
-#  name            :string
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  name            :string           not null
+#  main_instrument :string
+#  email           :string
 #
 class Player < ApplicationRecord
-  has_many :player_ensembles, dependent: :destroy
+  has_many :player_ensembles, dependent: :delete_all
   has_many :ensembles, through: :player_ensembles
 
-  has_many :player_projects, dependent: :destroy
+  has_many :player_projects, dependent: :delete_all
   has_many :projects, through: :player_projects
+
+  validates :name, presence: true
+
+  before_save do
+    self.email = email.presence
+    self.main_instrument = main_instrument.presence
+  end
 
   class << self
     if Rails.env.development?

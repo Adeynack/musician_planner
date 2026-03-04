@@ -8,6 +8,7 @@
 #  updated_at :datetime         not null
 #  player_id  :integer          not null
 #  project_id :integer          not null
+#  note       :text
 #
 # Indexes
 #
@@ -17,4 +18,8 @@
 class PlayerProject < ApplicationRecord
   belongs_to :player
   belongs_to :project
+
+  before_save do
+    self.note = note.presence
+  end
 end

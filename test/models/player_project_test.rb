@@ -8,6 +8,7 @@
 #  updated_at :datetime         not null
 #  player_id  :integer          not null
 #  project_id :integer          not null
+#  note       :text
 #
 # Indexes
 #

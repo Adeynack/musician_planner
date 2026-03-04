@@ -4,11 +4,20 @@
 # Database name: primary
 #
 #  id         :integer          not null, primary key
-#  email      :string
-#  name       :string
-#  website    :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  name       :string           not null
+#  website    :string
+#  email      :string
 #
 class Ensemble < ApplicationRecord
+  has_many :player_ensembles, dependent: :delete_all
+  has_many :players, through: :player_ensembles
+
+  validates :name, presence: true
+
+  before_save do
+    self.website = website.presence
+    self.email = email.presence
+  end
 end
