@@ -1,9 +1,6 @@
 <p style="color: green"><%= notice %></p>
-
 <% content_for :title, "Ensembles" %>
-
 <h1>Ensembles</h1>
-
 <div id="ensembles">
   <% @ensembles.each do |ensemble| %>
     <%= render ensemble %>
@@ -12,5 +9,4 @@
     </p>
   <% end %>
 </div>
-
 <%= link_to "New ensemble", new_ensemble_path %>
