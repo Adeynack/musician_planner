@@ -9,23 +9,21 @@
       </ul>
     </div>
   <% end %>
-  <div>
-    <%= form.label :name, style: "display: block" %>
+  <div class="mb-3">
+    <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
-  <div>
-    <%= form.label :ensemble_id, style: "display: block" %>
+  <div class="mb-3">
+    <%= form.label :ensemble_id %>
     <%= form.text_field :ensemble_id %>
   </div>
-  <div>
-    <%= form.label :date, style: "display: block" %>
+  <div class="mb-3">
+    <%= form.label :date %>
     <%= form.date_field :date %>
   </div>
-  <div>
-    <%= form.label :place, style: "display: block" %>
+  <div class="mb-3">
+    <%= form.label :place %>
     <%= form.text_field :place %>
   </div>
-  <div>
-    <%= form.submit %>
-  </div>
+  <%= form.submit %>
 <% end %>

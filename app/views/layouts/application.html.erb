@@ -16,6 +16,10 @@
   </head>
   <body>
     <%= render "layouts/navbar" %>
-    <%= yield %>
+    <div class="container">
+      <h1><%= content_for :title %></h1>
+      <p style="color: green"><%= notice %></p>
+      <%= yield %>
+    </div>
   </body>
 </html>

@@ -9,19 +9,17 @@
       </ul>
     </div>
   <% end %>
-  <div>
+  <div class="mb-3">
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
-  <div>
+  <div class="mb-3">
     <%= form.label :website, style: "display: block" %>
     <%= form.text_field :website %>
   </div>
-  <div>
+  <div class="mb-3">
     <%= form.label :email, style: "display: block" %>
     <%= form.text_field :email %>
   </div>
-  <div>
-    <%= form.submit %>
-  </div>
+  <%= form.submit %>
 <% end %>
