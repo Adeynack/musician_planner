@@ -25,5 +25,8 @@
     <%= form.label :place %>
     <%= form.text_field :place %>
   </div>
-  <%= form.submit %>
+  <%= render "components/toolbar" do %>
+    <%= form.submit %>
+    <%= yield %>
+  <% end %>
 <% end %>

@@ -1,7 +1,5 @@
 <% content_for :title, "Editing project" %>
-<%= render "form", project: @project %>
-<br>
-<div>
-  <%= link_to "Show this project", @project %> |
-  <%= link_to "Back to projects", projects_path %>
-</div>
+<%= render "form", project: @project do %>
+  <%= toolbar_link_to "Cancel", @project %>
+  <%= toolbar_link_to "Back to projects", projects_path %>
+<% end %>
