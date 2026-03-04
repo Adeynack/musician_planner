@@ -10,16 +10,16 @@
     </div>
   <% end %>
   <div class="mb-3">
-    <%= form.label :name, style: "display: block" %>
+    <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
   <div class="mb-3">
-    <%= form.label :website, style: "display: block" %>
+    <%= form.label :website %>
     <%= form.text_field :website %>
   </div>
   <div class="mb-3">
-    <%= form.label :email, style: "display: block" %>
+    <%= form.label :email %>
     <%= form.text_field :email %>
   </div>
-  <%= form.submit %>
+  <%= form.submit "Save" %>
 <% end %>
