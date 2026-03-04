@@ -12,12 +12,11 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-one:
-  name: MyString
-  website: MyString
-  email: MyString
-
-two:
-  name: MyString
-  website: MyString
-  email: MyString
+ww:
+  name: WindWerk - Sinfonisches Blasorchester Berlin e. V.
+  website: https://www.windwerkberlin.de/
+  email: mail@windwerkberlin.de
+zkb:
+  name: Zentralkapelle Berlin e.V.
+  website: https://www.zentralkapelle.de/
+  email: boris@zentralkapelle.de

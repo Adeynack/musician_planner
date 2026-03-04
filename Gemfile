@@ -41,20 +41,17 @@ gem "devise", "~> 5.0"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[mri windows], require: "debug/prelude"
-
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
   gem "standard", ">= 1.35.1", require: false
-
   gem "htmlbeautifier", "~> 1.4"
-
   gem "annotaterb", "~> 4.22"
+  gem "faker"
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-
   gem "overmind", "~> 2.5"
 end
 
