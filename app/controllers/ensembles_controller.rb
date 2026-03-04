@@ -1,9 +1,9 @@
 class EnsemblesController < ApplicationController
-  before_action :set_ensemble, only: %i[ show edit update destroy ]
+  before_action :set_ensemble, only: %i[show edit update destroy]
 
   # GET /ensembles or /ensembles.json
   def index
-    @ensembles = Ensemble.all
+    @ensembles = Ensemble.order(:name).all
   end
 
   # GET /ensembles/1 or /ensembles/1.json
@@ -58,13 +58,14 @@ class EnsemblesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_ensemble
-      @ensemble = Ensemble.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def ensemble_params
-      params.require(:ensemble).permit(:name, :website, :email)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_ensemble
+    @ensemble = Ensemble.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def ensemble_params
+    params.require(:ensemble).permit(:name, :website, :email)
+  end
 end

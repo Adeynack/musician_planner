@@ -5,10 +5,14 @@
   </p>
   <p>
     <strong>Website:</strong>
-    <%= ensemble.website %>
+    <% if ensemble.website.present? %>
+      <%= link_to ensemble.website %>
+    <% end%>
   </p>
   <p>
     <strong>Email:</strong>
-    <%= ensemble.email %>
+    <% if ensemble.email.present?  %>
+      <%= link_to ensemble.email, "mailto:#{ensemble.email}" %>
+    <% end %>
   </p>
 </div>
