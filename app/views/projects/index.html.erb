@@ -1,9 +1,5 @@
 <p style="color: green"><%= notice %></p>
 <% content_for :title, "Projects" %>
 <h1>Projects</h1>
-<div class="btn-group" role="group">
-  <%= link_to "New project", new_project_path, class: "btn btn-primary" %>
-</div>
-<div id="projects">
-  <%= render "projects_table", projects: @projects %>
-</div>
+<%= render "toolbar" %>
+<%= render "projects_table", projects: @projects %>

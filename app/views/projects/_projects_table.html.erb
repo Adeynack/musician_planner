@@ -1,20 +1,22 @@
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Ensemble</th>
-      <th scope="col">Date</th>
-      <th scope="col">Place</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% projects.each do |project| %>
+<div id="projects">
+  <table class="table">
+    <thead>
       <tr>
-        <td><%= link_to project.name, project %></td>
-        <td><%= link_to project.ensemble.name, project.ensemble %></td>
-        <td><%= project.date %></td>
-        <td><%= project.place %></td>
+        <th scope="col">Name</th>
+        <th scope="col">Ensemble</th>
+        <th scope="col">Date</th>
+        <th scope="col">Place</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% projects.each do |project| %>
+        <tr>
+          <td><%= link_to project.name, project %></td>
+          <td><%= link_to project.ensemble.name, project.ensemble %></td>
+          <td><%= project.date %></td>
+          <td><%= project.place %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
