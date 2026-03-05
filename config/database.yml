@@ -13,9 +13,6 @@ development:
   primary:
     <<: *default
     database: storage/development.sqlite3
-  primary:
-    <<: *default
-    database: storage/production.sqlite3
   queue:
     <<: *default
     database: storage/development_queue.sqlite3

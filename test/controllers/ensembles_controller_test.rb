@@ -2,7 +2,7 @@ require "test_helper"
 
 class EnsemblesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @ensemble = ensembles(:one)
+    @ensemble = ensembles(:windwerk)
   end
 
   test "should get index" do
@@ -17,7 +17,7 @@ class EnsemblesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create ensemble" do
     assert_difference("Ensemble.count") do
-      post ensembles_url, params: { ensemble: { email: @ensemble.email, name: @ensemble.name, website: @ensemble.website } }
+      post ensembles_url, params: {ensemble: {email: @ensemble.email, name: @ensemble.name, website: @ensemble.website}}
     end
 
     assert_redirected_to ensemble_url(Ensemble.last)
@@ -34,7 +34,7 @@ class EnsemblesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update ensemble" do
-    patch ensemble_url(@ensemble), params: { ensemble: { email: @ensemble.email, name: @ensemble.name, website: @ensemble.website } }
+    patch ensemble_url(@ensemble), params: {ensemble: {email: @ensemble.email, name: @ensemble.name, website: @ensemble.website}}
     assert_redirected_to ensemble_url(@ensemble)
   end
 
