@@ -1,0 +1,18 @@
+<div id="<%= dom_id project %>">
+  <p>
+    <strong>Name:</strong>
+    <%= project.name %>
+  </p>
+  <p>
+    <strong>Ensemble:</strong>
+    <%= link_to project.ensemble.name, project.ensemble %>
+  </p>
+  <p>
+    <strong>Date:</strong>
+    <%= project.date %>
+  </p>
+  <p>
+    <strong>Place:</strong>
+    <%= project.place %>
+  </p>
+</div>

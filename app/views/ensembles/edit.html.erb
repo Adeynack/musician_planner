@@ -1,0 +1,5 @@
+<% content_for :title, @ensemble.name %>
+<%= render "form", ensemble: @ensemble do %>
+  <%= toolbar_link_to "Cancel", @ensemble %>
+  <%= toolbar_link_to "Back to ensembles", ensembles_path %>
+<% end %>

@@ -1,0 +1,54 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# == Schema Information
+#
+# Table name: players
+# Database name: primary
+#
+#  id              :integer          not null, primary key
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  name            :string           not null
+#  main_instrument :string
+#  email           :string
+#
+marlin_sipes_esq:
+  name: Marlin Sipes Esq.
+  email: marlin_sipes_esq@example.com
+  main_instrument: Clarinette
+cheryle_corkery:
+  name: Cheryle Corkery
+  email: cheryle_corkery@example.com
+  main_instrument: Trompet
+jonah_mcclure:
+  name: Jonah McClure
+  email: jonah_mcclure@example.com
+  main_instrument: Percussion
+blair_osinski:
+  name: Blair Osinski
+  email: blair_osinski@example.com
+  main_instrument: Clarinette
+miss_lionel_hettinger:
+  name: Miss Lionel Hettinger
+  email: miss_lionel_hettinger@example.com
+  main_instrument: Trompet
+lucilla_zemlak:
+  name: Lucilla Zemlak
+  email: lucilla_zemlak@example.com
+  main_instrument: Clarinette
+palma_mohr:
+  name: Palma Mohr
+  email: palma_mohr@example.com
+  main_instrument: Flute
+sen_darci_sawayn:
+  name: Sen. Darci Sawayn
+  email: sen_darci_sawayn@example.com
+  main_instrument: Percussion
+fr_becky_rempel:
+  name: Fr. Becky Rempel
+  email: fr_becky_rempel@example.com
+  main_instrument: Flute
+daryl_schneider:
+  name: Daryl Schneider
+  email: daryl_schneider@example.com
+  main_instrument: Flute

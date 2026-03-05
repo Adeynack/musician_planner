@@ -1,0 +1,5 @@
+<%= render "components/toolbar" do %>
+  <%= toolbar_link_to "Back to ensembles", ensembles_path %>
+  <%= toolbar_link_to "Edit", edit_ensemble_path(@ensemble) %>
+  <%= toolbar_delete_link_to "Delete", @ensemble %>
+<% end %>

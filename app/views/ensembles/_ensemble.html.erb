@@ -1,0 +1,18 @@
+<div id="<%= dom_id ensemble %>">
+  <p>
+    <strong>Name:</strong>
+    <%= ensemble.name %>
+  </p>
+  <p>
+    <strong>Website:</strong>
+    <% if ensemble.website.present? %>
+      <%= link_to ensemble.website %>
+    <% end%>
+  </p>
+  <p>
+    <strong>Email:</strong>
+    <% if ensemble.email.present?  %>
+      <%= link_to ensemble.email, "mailto:#{ensemble.email}" %>
+    <% end %>
+  </p>
+</div>

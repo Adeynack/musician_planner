@@ -1,0 +1,5 @@
+<% content_for :title, @project.name %>
+<%= render "form", project: @project do %>
+  <%= toolbar_link_to "Cancel", @project %>
+  <%= toolbar_link_to "Back to projects", projects_path %>
+<% end %>

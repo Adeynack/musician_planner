@@ -1,0 +1,22 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# == Schema Information
+#
+# Table name: ensembles
+# Database name: primary
+#
+#  id         :integer          not null, primary key
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  name       :string           not null
+#  website    :string
+#  email      :string
+#
+windwerk:
+  name: WindWerk - Sinfonisches Blasorchester Berlin e. V.
+  website: https://www.windwerkberlin.de/
+  email: mail@windwerkberlin.de
+zkb:
+  name: Zentralkapelle Berlin e.V.
+  website: https://www.zentralkapelle.de/
+  email: boris@zentralkapelle.de

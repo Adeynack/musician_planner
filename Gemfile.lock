@@ -76,6 +76,7 @@ GEM
       tzinfo (~> 2.0, >= 2.0.5)
     addressable (2.8.9)
       public_suffix (>= 2.0.2, < 8.0)
+    amazing_print (2.0.0)
     annotaterb (4.22.0)
       activerecord (>= 6.0.0)
       activesupport (>= 6.0.0)
@@ -120,6 +121,8 @@ GEM
     erubi (1.13.1)
     et-orbi (1.4.0)
       tzinfo
+    faker (3.6.0)
+      i18n (>= 1.8.11, < 2)
     fugit (1.12.1)
       et-orbi (~> 1.4)
       raabro (~> 1.4)
@@ -379,12 +382,14 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  amazing_print (~> 2.0)
   annotaterb (~> 4.22)
   bootsnap
   capybara
   cssbundling-rails
   debug
   devise (~> 5.0)
+  faker
   htmlbeautifier (~> 1.4)
   jbuilder
   jsbundling-rails

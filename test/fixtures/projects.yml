@@ -1,0 +1,43 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# == Schema Information
+#
+# Table name: projects
+# Database name: primary
+#
+#  id          :integer          not null, primary key
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  name        :string           not null
+#  ensemble_id :integer          not null
+#  date        :date             not null
+#  place       :string
+#
+# Indexes
+#
+#  index_projects_on_ensemble_id  (ensemble_id)
+#
+# Foreign Keys
+#
+#  ensemble_id  (ensemble_id => ensembles.id)
+#
+ww_philharmonie_2026_06_01:
+  name: WindWerk in der Philharmonie
+  date: 2026-06-01
+  place: Großer Saal der Berliner Philharmonie
+  ensemble: windwerk
+ww_bremer_oper_2028_01_01:
+  name: WindWerk Silvester Konzert
+  date: 2028-01-01
+  place: Bremer Oper
+  ensemble: windwerk
+zkb_am_see_2026_08_14:
+  name: Zentralkapelle See Konzert
+  date: 2026-08-14
+  place: Am See
+  ensemble: zkb
+zkb_weihnacht_2026:
+  name: Freue Weihnachten mit der Zentralkappelle
+  date: 2026-12-25
+  place: RBB Sendesaal (Berlin)
+  ensemble: zkb
