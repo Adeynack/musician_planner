@@ -14,7 +14,8 @@ class Ensemble < ApplicationRecord
   has_many :player_ensembles, dependent: :delete_all
   has_many :players, through: :player_ensembles
 
-  has_many :projects, dependent: :destroy
+  has_many :projects, dependent: :delete_all
+  has_many :project_players, -> { distinct }, class_name: "Player", through: :projects, source: :players
 
   validates :name, presence: true
 

@@ -76,6 +76,7 @@ GEM
       tzinfo (~> 2.0, >= 2.0.5)
     addressable (2.8.9)
       public_suffix (>= 2.0.2, < 8.0)
+    amazing_print (2.0.0)
     annotaterb (4.22.0)
       activerecord (>= 6.0.0)
       activesupport (>= 6.0.0)
@@ -381,6 +382,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  amazing_print (~> 2.0)
   annotaterb (~> 4.22)
   bootsnap
   capybara
