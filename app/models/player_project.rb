@@ -15,6 +15,11 @@
 #  index_player_projects_on_player_id   (player_id)
 #  index_player_projects_on_project_id  (project_id)
 #
+# Foreign Keys
+#
+#  player_id   (player_id => players.id)
+#  project_id  (project_id => projects.id)
+#
 class PlayerProject < ApplicationRecord
   belongs_to :player
   belongs_to :project

@@ -17,6 +17,10 @@
 #
 #  index_projects_on_ensemble_id  (ensemble_id)
 #
+# Foreign Keys
+#
+#  ensemble_id  (ensemble_id => ensembles.id)
+#
 ww_philharmonie_2026_06_01:
   name: WindWerk in der Philharmonie
   date: 2026-06-01

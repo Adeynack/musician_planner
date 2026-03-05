@@ -15,6 +15,11 @@
 #  index_player_ensembles_on_ensemble_id  (ensemble_id)
 #  index_player_ensembles_on_player_id    (player_id)
 #
+# Foreign Keys
+#
+#  ensemble_id  (ensemble_id => ensembles.id)
+#  player_id    (player_id => players.id)
+#
 class PlayerEnsemble < ApplicationRecord
   belongs_to :player
   belongs_to :ensemble

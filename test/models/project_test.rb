@@ -15,6 +15,10 @@
 #
 #  index_projects_on_ensemble_id  (ensemble_id)
 #
+# Foreign Keys
+#
+#  ensemble_id  (ensemble_id => ensembles.id)
+#
 require "test_helper"
 
 class ProjectTest < ActiveSupport::TestCase
