@@ -14,6 +14,7 @@
     "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
     "editor.formatOnSave": true
   },
+  "vscode-erb-beautify.executePath": "bin/htmlbeautifier",
   "files.associations": {
     "*.html.erb": "erb"
   },
