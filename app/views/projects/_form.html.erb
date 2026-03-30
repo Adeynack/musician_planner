@@ -1,4 +1,5 @@
 <%# locals: (project:) -%>
+<%= yield %>
 <%= form_with(model: project) do |form| %>
   <% if project.errors.any? %>
     <div style="color: red">
@@ -28,6 +29,6 @@
   </div>
   <%= render "components/toolbar" do %>
     <%= form.submit %>
-    <%= yield %>
+    <%= yield :toolbar %>
   <% end %>
 <% end %>

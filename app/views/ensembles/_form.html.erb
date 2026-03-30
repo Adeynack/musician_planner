@@ -1,3 +1,5 @@
+<%# locals: (ensemble:) %>
+<%= yield %>
 <%= form_with(model: ensemble) do |form| %>
   <% if ensemble.errors.any? %>
     <div style="color: red">
@@ -22,7 +24,7 @@
     <%= form.text_field :email %>
   </div>
   <%= render "components/toolbar" do %>
-    <%= form.submit "Save" %>
-    <%= yield %>
+    <%= form.submit %>
+    <%= yield :toolbar %>
   <% end%>
 <% end %>
